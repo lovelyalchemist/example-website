@@ -1,0 +1,163 @@
+@import 'bases/colors.scss';
+
+
+.navbar {
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+    >.logo {
+        color: $red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    /* icon colors */
+    .material-icons {
+        color: $red;
+
+        @include breakpoint(mobile) {
+            color: $white;
+        }
+    }
+
+    .links {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+
+        >#navcheck {
+            display: none;
+
+            :not(:checked) {
+                ~.navlinks {
+                    height: 0;
+                }
+            }
+
+            &:checked {
+                +label {
+                    display: flex;
+                    justify-content: center;
+                    align-self: center;
+                    align-content: center;
+                    align-items: center;
+                    width: 168px;
+                    height: auto;
+                    padding: 8px;
+                    background: $red;
+                    position: absolute;
+                    top: 40px;
+                    right: 128px;
+                    z-index: 4;
+                    border-radius: 4px;
+
+                    ul {
+                        display: inline;
+                        z-index: 4;
+                    }
+                }
+            }
+        }
+
+        >.navbutton {
+            display: none;
+            padding-top: 32px;
+
+            @include breakpoint(mobile) {
+                display: inline-block;
+                float: right;
+
+                label {
+                    display: inline-block;
+                    width: 40px;
+                    height: 40px;
+                    padding: 8px;
+                    margin: 8px;
+                    background: $red;
+                    position: relative;
+                    cursor: pointer;
+                    border-radius: 6px;
+
+                    &:hover {
+                        background: rgba(56, 77, 141, 0.2);
+                        transition: all 1s ease-in-out;
+                    }
+
+                    >span {
+                        display: block;
+                        width: 24px;
+                        height: 10px;
+                        border-top: 2px solid white;
+                    }
+                }
+            }
+        }
+
+        >.navlinks {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+
+            @include breakpoint(mobile) {
+                display: none;
+            }
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                max-height: 196px;
+                width: 100%;
+                padding-left: 8px;
+                margin: 8px 0;
+                justify-content: flex-end;
+
+                @include breakpoint(mobile) {
+                    display: none;
+                }
+
+                li {
+                    list-style-type: none;
+                    margin-right: 4%;
+                    cursor: pointer;
+                    display: flex;
+                    align-self: center;
+                    align-items: center;
+
+                    span {
+                        font-size: 0.8em;
+                        color: white;
+                    }
+                }
+
+                a {
+                    font-size: 0.8em;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    padding: 2em 0.4em;
+                    text-decoration: none;
+                    color: white;
+                    float: left;
+                    border-bottom: 2px solid transparent;
+
+                    @include breakpoint(mobile) {
+                        font-size: 14px;
+                        margin: 0.1em;
+                        padding: 0.1em;
+                    }
+
+                    &:hover {
+                        border-bottom: 2px solid red;
+                    }
+
+                    &:active {
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+}

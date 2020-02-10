@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Asal Hotel - Örnek Site</title>
+	<base href="/">
+	<meta name="description" content="Örnek WebSitesi">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="./css/main.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+	<section id="main" role="main">
+		<section id="navbar" class="navbar" role="navigation">
+			<div class="logo">
+				Logo
+			</div>
+			<div class="links">
+				<div class="navbutton">
+					<label for="navcheck">
+						<span></span>
+						<span></span>
+						<span></span>
+					</label>
+				</div>
+				<input type="checkbox" id="navcheck" class="navcheck" />
+				<label class="navlinks">
+					<ul>
+						<li>
+							<i class="material-icons">
+								room
+							</i>
+							<span>Çankırı Caddesi No: 30 06300 Ulus/ANKARA - TÜRKİYE</span>
+						</li>
+						<li>
+							<i class="material-icons">
+								local_phone
+							</i>
+							<span>+90 312 311 55 25</span>
+						</li>
+						<li>
+							<span>TR</span>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="#homepage"> Anasayfa </a>
+						</li>
+						<li>
+							<a href="#about"> Hakkımızda </a>
+						</li>
+						<li>
+							<a href="#rooms"> Odalar </a>
+						</li>
+						<li>
+							<a href="#gallery"> Galeri</a>
+						</li>
+						<li>
+							<a href="#locations">Önemli Lokasyonlar</a>
+						</li>
+						<li>
+							<a href="#contact"> İletişim </a>
+						</li>
+					</ul>
+				</label>
+			</div>
+
+		</section>
+		<section id="slider" role="slider">
+			<ul class="slides">
+				<input type="radio" name="radio-btn" id="img-1" checked />
+				<li class="slide-container">
+					<div class="slide">
+						<img src="img/slider/slide-1.jpg" width="100%" />
+					</div>
+					<div class="nav">
+						<label for="img-6" class="prev">&#x2039;</label>
+						<label for="img-2" class="next">&#x203a;</label>
+					</div>
+				</li>
+
+				<input type="radio" name="radio-btn" id="img-2" />
+				<li class="slide-container">
+					<div class="slide">
+						<img src="img/slider/slide-2.jpg" width="100%" />
+					</div>
+					<div class="nav">
+						<label for="img-1" class="prev">&#x2039;</label>
+						<label for="img-3" class="next">&#x203a;</label>
+					</div>
+				</li>
+
+				<input type="radio" name="radio-btn" id="img-3" />
+				<li class="slide-container">
+					<div class="slide">
+						<img src="img/slider/slide-3.jpg" width="100%" />
+					</div>
+					<div class="nav">
+						<label for="img-2" class="prev">&#x2039;</label>
+						<label for="img-4" class="next">&#x203a;</label>
+					</div>
+				</li>
+
+				<input type="radio" name="radio-btn" id="img-4" />
+				<li class="slide-container">
+					<div class="slide">
+						<img src="img/slider/slide-4.jpg" width="100%" />
+					</div>
+					<div class="nav">
+						<label for="img-3" class="prev">&#x2039;</label>
+						<label for="img-5" class="next">&#x203a;</label>
+					</div>
+				</li>
+				<li class="nav-dots">
+					<label for="img-1" class="nav-dot" id="img-dot-1"></label>
+					<label for="img-2" class="nav-dot" id="img-dot-2"></label>
+					<label for="img-3" class="nav-dot" id="img-dot-3"></label>
+					<label for="img-4" class="nav-dot" id="img-dot-4"></label>
+				</li>
+			</ul>
+		</section>
+		<div class="fixed-bottom">
+			<h1> ASAL HOTEL</h1>
+			<h2>İster ailenizle Ankara'yı keşfe çıkın, ister iş gezileriniz için konaklayın.</h2>
+			<div class="reservation">
+				<div class="reservation-input">
+					<span>GİRİŞ TARİHİ</span>
+					<i class="material-icons">
+						calendar_today
+					</i></div>
+				<div class="reservation-input">
+					<span>ÇIKIŞ TARİHİ</span>
+					<i class="material-icons">
+						calendar_today
+					</i>
+				</div>
+				<div class="reservation-input"> <span>YETİŞKİN</span></div>
+				<div class="reservation-input"> <span>ÇOCUK</span></div>
+				<div class="reservation-button"><button type="button" class="btn btn-reservation">REZERVASYON
+						YAP</button></div>
+			</div>
+		</div>
+	</section>
+	<section role="contentinfo" class="about">
+		<div class="content">
+			<div class="content-img">
+				<img src="/img/hotel.jpg" width="100%" height="auto">
+			</div>
+			<div class="content-text">
+				<h3>Asal Hotel</h3>
+				<p>
+					Asal Hotel, 2003 yılından bu yana turizm sektöründe tecrübeli ve kaliteli hizmetini, uluslararası
+					çağdaş otelcilik anlayışı, kesintisiz değişim ve atılım ilkesiyle birleştirerek modern bir şehir
+					otelinin gerektirdiği donanımla profesyonel hizmet vermektedir. Tecrübe, profesyonellik ve kaliteli
+					hizmet anlayışımız ile Asal Hotel ailesi olrak sizleri ağırlatız
+					.
+				</p>
+			</div>
+		</div>
+	</section>
+	<section role="contentinfo" class="rooms">
+		<h3>Odalarımız</h3>
+		<p>50 standart oda, 8 exclusive oda olmak üzere toplam 56 oda ile hiznet vermekteyiz</p>
+		<div class="img-cards">
+			<div class="card">
+				<img src="img/rooms/room-single.jpg">
+				<div class="card-text">
+					<h4>Single Room</h4>
+					<p>1 adet koca yatak</p>
+					<button type="button" class="btn btn-red">İncele</button>
+				</div>
+			</div>
+
+			<div class="card">
+				<img src="img/rooms/room-single.jpg">
+				<div class="card-text">
+					<h4>Single Room</h4>
+					<p>1 adet koca yatak</p>
+					<button type="button" class="btn btn-red">İncele</button>
+				</div>
+			</div>
+			<div class="card">
+				<img src="img/rooms/room-single.jpg">
+				<div class="card-text">
+					<h4>Single Room</h4>
+					<p>1 adet koca yatak</p>
+					<button type="button" class="btn btn-red">İncele</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section role="contentinfo" class="about">
+		<div class="content">
+
+			<div class="content-text">
+				<h4>Bizimle rezervasyon yaptırdığınızda</h4>
+				<br>
+				<h4 style="color: #ee4737;">En iyi fiyat garantisi !</h4>
+				<br>
+				<p>Online rezervasyon yaptırın veya arayın</p>
+				<div class="phonenumber">
+					<i class="material-icons">
+						phone
+					</i>
+					<span> + 90 312 311 55 25</span>
+				</div>
+			</div>
+			<div class="content-img">
+				<img src="/img/hotel.jpg" width="100%" height="auto">
+			</div>
+		</div>
+	</section>
+	<section role="contentinfo" class="hotelinfo">
+		<h3>Otel Bilgisi</h3>
+		<div class="icon-cards">
+			<div class="card">
+				<div class="card-icon">
+					<i class="material-icons">
+						hotel
+					</i>
+				</div>
+				<div class="card-text">Lorem Lorem ipsumlar texlts</div>
+			</div>
+			<div class="card">
+				<div class="card-icon">
+					<i class="material-icons">
+						hotel
+					</i>
+				</div>
+				<div class="card-text">Lorem Lorem ipsumlar texlts</div>
+			</div>
+			<div class="card">
+				<div class="card-icon">
+					<i class="material-icons">
+						hotel
+					</i>
+				</div>
+				<div class="card-text">Lorem Lorem ipsumlar texlts</div>
+			</div>
+			<div class="card">
+				<div class="card-icon">
+					<i class="material-icons">
+						hotel
+					</i>
+				</div>
+				<div class="card-text">Lorem Lorem ipsumlar texlts</div>
+			</div>
+		</div>
+
+	</section>
+	<section role="contentinfo" class="locations">
+		<div class="locations-headers">
+			<h3>
+				Önemli Lokasyonlar
+			</h3>
+			<span>Daha Fazla &#8594;</span>
+		</div>
+		<div class="locations-images">
+			<div class="medium location">
+				<div class="location-img"><img src="img/anitkabir.jpg" width="100%"> </div>
+				<div class="location-text"><span> Lorem İpsum</span></div>
+			</div>
+			<div class="small location">
+				<div class="location-img"><img src="img/anitkabir.jpg" width="100%"> </div>
+				<div class="location-text"><span> İpsum</span></div>
+			</div>
+			<div class="small location">
+				<div class="location-img"><img src="img/anitkabir.jpg" width="100%"> </div>
+				<div class="location-text"><span>lorem İpsum</span></div>
+			</div>
+			<div class="medium location">
+				<div class="location-img"><img src="img/anitkabir.jpg" width="100%"> </div>
+				<div class="location-text"><span> lorem İpsum</span></div>
+			</div>
+		</div>
+
+	</section>
+	<section class="comments">
+
+		<h2>Müşteri Yorumları</h2>
+		<ul class="slidescomment">
+			<input type="radio" name="checkbox" id="slide-1" checked />
+			<li class="slidecomment-container">
+				<div class="slidecomment">
+					<div class="comment">
+						<h4>
+							Oksana
+						</h4>
+						<p>Bu Otelde 10 gün kaldım. Servis, temizlik, kahvaltı konaklama her şey çok güzeldi.
+							Çalışanlar güler yüzlü ve çok yardımcı oldular. Ankara'ya gelirsem yine bu otelde kalırım,
+							fiyatı ve
+							kalitesi çok iyi. Yalnız bir bayan için Ulus'ta çok güvenli ve rahat bir otel.
+							tüm çalışanlara çok teşekkür ederim.
+						</p>
+					</div>
+				</div>
+			</li>
+
+			<input type="radio" name="checkbox" id="slide-2" />
+			<li class="slidecomment-container">
+				<div class="slidecomment">
+					<div class="comment">
+						<h4>
+							Üye
+						</h4>
+						<p>Otelde 10 gün kaldım. Servis, temizlik, kahvaltı konaklama her şey çok güzeldi.
+							Çalışanlar güler yüzlü ve çok yardımcı oldular. Ankara'ya gelirsem yine bu otelde kalırım,
+							fiyatı ve
+							kalitesi çok iyi. Yalnız bir bayan için Ulus'ta çok güvenli ve rahat bir otel.
+							tüm çalışanlara çok teşekkür ederim.
+						</p>
+					</div>
+				</div>
+			</li>
+
+			<input type="radio" name="checkbox" id="slide-3" />
+			<li class="slidecomment-container">
+				<div class="slidecomment">
+					<div class="comment">
+						<h4>
+							yest
+						</h4>
+						<p>Otelde 10 gün kaldım. Servis, temizlik, kahvaltı konaklama her şey çok güzeldi.
+							Çalışanlar güler yüzlü ve çok yardımcı oldular. Ankara'ya gelirsem yine bu otelde kalırım,
+							fiyatı ve
+							kalitesi çok iyi. Yalnız bir bayan için Ulus'ta çok güvenli ve rahat bir otel.
+							tüm çalışanlara çok teşekkür ederim.
+						</p>
+					</div>
+				</div>
+			</li>
+
+			<input type="radio" name="checkbox" id="slide-4" />
+			<li class="slidecomment-container">
+				<div class="slidecomment">
+					<div class="comment">
+						<h4>
+							dene
+						</h4>
+						<p>Otelde 10 gün kaldım. Servis, temizlik, kahvaltı konaklama her şey çok güzeldi.
+							Çalışanlar güler yüzlü ve çok yardımcı oldular. Ankara'ya gelirsem yine bu otelde kalırım,
+							fiysi çok iyi. Yalnız bir bayan için Ulus'ta çok güvenli ve rahat bir otel.
+							tüm çalışanlara çok teşekkür ederim.
+						</p>
+					</div>
+				</div>
+			</li>
+
+			<input type="radio" name="checkbox" id="slide-5" />
+			<li class="slidecomment-container">
+				<div class="slidecomment">
+					<div class="comment">
+						<h4>
+							Test
+						</h4>
+						<p>Otelde 10 gün kaldım. Servis, temizlik, kahvaltı konaklama her şey çok güzeldi.
+							Çalışanlar güler yüzlü ve çok yardımcı oldular. Ankara'ya gelirsem yine bu otelde kalırım,
+							fiyatı ve
+							kalitesi çok iyi. Yalnız bir bayan için Ulus'ta çok güvenli ve rahat bir otel.
+							tüm çalışanlara çok teşekkür ederim.
+						</p>
+					</div>
+				</div>
+			</li>
+
+			<input type="radio" name="checkbox" id="slide-6" />
+			<li class="slidecomment-container">
+				<div class="slidecomment">
+					<div class="comment">
+						<h4>
+							test 2
+						</h4>
+						<p>Otelde 10 gün kaldım. Servis, temizlik, kahvaltı konaklama her şey çok güzeldi.
+							Çalışanlar güler yüzlü ve çok yardımcı oldular. Ankara'ya gelirsem yine bu otelde kalırım,
+							fiyatı ve
+							kalitesi çok iyi. Yalnız bir bayan için Ulus'ta çok güvenli ve rahat bir otel.
+							tüm çalışanlara çok teşekkür ederim.
+						</p>
+					</div>
+				</div>
+			</li>
+
+			<li class="nav-dots">
+				<label for="slide-1" class="nav-dot" id="slide-dot-1"></label>
+				<label for="slide-2" class="nav-dot" id="slide-dot-2"></label>
+				<label for="slide-3" class="nav-dot" id="slide-dot-3"></label>
+				<label for="slide-4" class="nav-dot" id="slide-dot-4"></label>
+				<label for="slide-5" class="nav-dot" id="slide-dot-5"></label>
+				<label for="slide-6" class="nav-dot" id="slide-dot-6"></label>
+			</li>
+		</ul>
+
+	</section>
+	<footer class="footer-1">
+		<div class="logo">
+			<!-- logonun geleceği yer-->
+			<div style="width: 100px; height: 120px; background-color: whitesmoke;">LOGO</div>
+		</div>
+		<div class="footer-section">
+			<div style="width: 240px; background-color: whitesmoke;">Harita Yeri</div>
+		</div>
+		<div class="footer-section">
+			<ul>
+				<li>
+					<i class="material-icons">
+						room
+					</i>
+					<span>Çankırı Cadddesi No: 29: 06030 Ulus/ANKARA - TÜRKİYE</span>
+				</li>
+				<li>
+					<i class="material-icons">
+						mail
+					</i>
+					<span>info@asal.com.tr</span>
+				</li>
+				<li>
+					<i class="material-icons">
+						local_phone
+					</i>
+					<span>+90 312 311 55 25 </span>
+				</li>
+				<li>
+					<i class="material-icons">
+						smartphone
+					</i>
+					<span>+90 312 311 55 25 </span>
+				</li>
+				<li>
+					<i class="material-icons">
+						description
+					</i>
+					<span>+90 312 311 55 25 </span>
+				</li>
+			</ul>
+			<div class="icons">
+				<div class="icon"></div>
+				<div class="icon"></div>
+			</div>
+		</div>
+		<div class="footer-section">
+			<h4>E-Bülten</h4>
+			<p>Kampanyalarımızdan hanerder olmak için bültenimize kayıt olabilirsiniz.</p>
+		</div>
+	</footer>
+	<footer class="footer-2">
+		<div class="creditcardlogos"></div>
+		<div class="copyright"> <span>&#169; 2019 Asal Hotel - Tüm Hakları Saklıdır.</span></div>
+	</footer>
+</body>
+
+</html>
